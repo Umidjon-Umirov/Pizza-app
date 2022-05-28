@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Header from './components/Header';
 
+import {
+    fetchPizzasData,
+    selectCategory,
+    selectSortName,
+} from './store/slices/PizzasSlice';
+
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import { selectCount } from './store/slices/ChartSlice';
+import EmptyChart from './components/EmptyChart';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const category = useSelector(selectCategory);
+    const sortName = useSelector(selectSortName);
+    const dispatch = useDispatch();
+    const pizzaInChart=useSelector(selectCount)
+    useEffect(() => {
+        dispatch(fetchPizzasData({ category, sortName }));
+        console.log(category);
+    }, [category, sortName]);
+    return (
+        <div className='App'>
+            <div className='wrapper'>
+                <Header />
+                <div className='content'>
+                    <Routes>
+                        <Route index element={<Home />} />
+                        <Route path='chart' element={pizzaInChart ? <Cart /> : <EmptyChart/>} />
+                    </Routes>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;

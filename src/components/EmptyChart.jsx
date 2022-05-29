@@ -12,7 +12,7 @@ const EmptyChart = () => {
                     Для того, чтобы заказать пиццу, перейди на главную страницу.
                 </p>
                 <img src={emptyCart} alt='Empty cart' />
-                <Link to={'/'} className='button button--black'>
+                <Link to={'https://Umidjon-Umirov.github.io/Pizza-app'} className='button button--black'>
                     <span>Вернуться назад</span>
                 </Link>
             </div>

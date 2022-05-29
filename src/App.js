@@ -17,10 +17,9 @@ function App() {
     const category = useSelector(selectCategory);
     const sortName = useSelector(selectSortName);
     const dispatch = useDispatch();
-    const pizzaInChart=useSelector(selectCount)
+    const pizzaInChart = useSelector(selectCount);
     useEffect(() => {
         dispatch(fetchPizzasData({ category, sortName }));
-        console.log(category);
     }, [category, sortName]);
     return (
         <div className='App'>
@@ -29,7 +28,10 @@ function App() {
                 <div className='content'>
                     <Routes>
                         <Route index element={<Home />} />
-                        <Route path='chart' element={pizzaInChart ? <Cart /> : <EmptyChart/>} />
+                        <Route
+                            path='chart'
+                            element={pizzaInChart ? <Cart /> : <EmptyChart />}
+                        />
                     </Routes>
                 </div>
             </div>

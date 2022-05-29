@@ -28,7 +28,11 @@ function App() {
                 <div className='content'>
                     <Routes>
                         <Route
-                            path='https://Umidjon-Umirov.github.io/Pizza-app/chart'
+                            path='/Pizza-app'
+                            element={<Home />}
+                        />
+                        <Route
+                            path='/Pizza-app/chart'
                             element={pizzaInChart ? <Cart /> : <EmptyChart />}
                         />
                     </Routes>

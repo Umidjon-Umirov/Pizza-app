@@ -28,11 +28,11 @@ function App() {
                 <div className='content'>
                     <Routes>
                         <Route
-                            path='/Pizza-app'
+                            path='Pizza-app'
                             element={<Home />}
                         />
                         <Route
-                            path='/Pizza-app/chart'
+                            path='Pizza-app/chart'
                             element={pizzaInChart ? <Cart /> : <EmptyChart />}
                         />
                     </Routes>

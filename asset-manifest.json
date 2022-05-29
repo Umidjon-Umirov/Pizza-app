@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Pizza-app/static/css/main.a16ce8ab.css",
-    "main.js": "/Pizza-app/static/js/main.d77b3a38.js",
+    "main.js": "/Pizza-app/static/js/main.165443c3.js",
     "static/media/ProximaNova-Regular.eot": "/Pizza-app/static/media/ProximaNova-Regular.d97f8f32c098b28c3ab0.eot",
     "static/media/ProximaNova-Regular.ttf": "/Pizza-app/static/media/ProximaNova-Regular.b078618b41b9b6629ea0.ttf",
     "static/media/ProximaNova-Bold.eot": "/Pizza-app/static/media/ProximaNova-Bold.787088b281e017f8c449.eot",
@@ -18,10 +18,10 @@
     "static/media/pizza-logo.svg": "/Pizza-app/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg",
     "index.html": "/Pizza-app/index.html",
     "main.a16ce8ab.css.map": "/Pizza-app/static/css/main.a16ce8ab.css.map",
-    "main.d77b3a38.js.map": "/Pizza-app/static/js/main.d77b3a38.js.map"
+    "main.165443c3.js.map": "/Pizza-app/static/js/main.165443c3.js.map"
   },
   "entrypoints": [
     "static/css/main.a16ce8ab.css",
-    "static/js/main.d77b3a38.js"
+    "static/js/main.165443c3.js"
   ]
 }

@@ -123,7 +123,7 @@ const Cart = () => {
                     </div>
                     <div className='cart__bottom-buttons'>
                         <Link
-                            to={'/'} 
+                            to={'/Pizza-app'} 
                             className='button button--outline button--add go-back-btn'
                         >
                             <svg

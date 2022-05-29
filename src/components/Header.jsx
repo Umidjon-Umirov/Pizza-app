@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div className='header'>
             <div className='container'>
-                <Link to={'https://Umidjon-Umirov.github.io/Pizza-app'} className='header__logo'>
+                <Link to={'/Pizza-app'} className='header__logo'>
                     <img width='38' src={logo} alt='Pizza logo' />
                     <div>
                         <h1>React Pizza</h1>
@@ -17,7 +17,7 @@ const Header = () => {
                     </div>
                 </Link>
                 <div className='header__cart'>
-                    <Link to={'https://Umidjon-Umirov.github.io/Pizza-app/chart'} className='button button--cart'>
+                    <Link to={'Pizza-app/chart'} className='button button--cart'>
                         <span>{cost} ₽</span>
                         <div className='button__delimiter'></div>
                         <svg

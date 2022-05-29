@@ -29,7 +29,7 @@ function App() {
                     <Routes>
                         <Route index element={<Home />} />
                         <Route
-                            path='chart'
+                            path='/https://Umidjon-Umirov.github.io/Pizza-appchart'
                             element={pizzaInChart ? <Cart /> : <EmptyChart />}
                         />
                     </Routes>
